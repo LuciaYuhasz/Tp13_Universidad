@@ -13,7 +13,7 @@ public class Tp13_Universidad {
     public static void main(String[] args) {
         try {
             Class.forName("org.mariadb.jdbc.Driver");
-            String URL = "jdbc:mariadb://localhost:3306/trabajo-practico13";
+            String URL = "jdbc:mariadb://localhost:3308/trabajo_practico13";
             String usuario = "root";
             String password = "";
             Connection con = DriverManager.getConnection(URL,usuario,password);
@@ -189,8 +189,32 @@ public class Tp13_Universidad {
 //        
 //        
  //       }
-        
-        String sql= " DELETE FROM inscripcion WHERE nota = 2";
+//        
+//        String sql= " DELETE FROM inscripcion WHERE nota = 2";
+//              PreparedStatement ps= con.prepareStatement(sql);
+//           int filas= ps.executeUpdate();
+//           if(filas>0){
+//           JOptionPane.showMessageDialog(null,"Alumno Desaprobado");}
+//        
+//        }catch (ClassNotFoundException ex) {
+//            JOptionPane.showMessageDialog(null, "Error de carga de base de datos " + ex.getMessage());
+//            }catch (SQLException ex) {
+//            JOptionPane.showMessageDialog(null, "Error en la conexion" + ex.getMessage());
+//        }
+//    } 
+ //String sql= " DELETE FROM inscripcion WHERE nota = 2";
+//              PreparedStatement ps= con.prepareStatement(sql);
+//           int filas= ps.executeUpdate();
+//           if(filas>0){
+//           JOptionPane.showMessageDialog(null,"Alumno Desaprobado");}
+//        
+//        }catch (ClassNotFoundException ex) {
+//            JOptionPane.showMessageDialog(null, "Error de carga de base de datos " + ex.getMessage());
+//            }catch (SQLException ex) {
+//            JOptionPane.showMessageDialog(null, "Error en la conexion" + ex.getMessage());
+//        }
+  //  }
+        String sql= " DELETE FROM inscripcion WHERE nota = 8";
               PreparedStatement ps= con.prepareStatement(sql);
            int filas= ps.executeUpdate();
            if(filas>0){
@@ -201,7 +225,8 @@ public class Tp13_Universidad {
             }catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Error en la conexion" + ex.getMessage());
         }
-    } // ultimo intento
+   } 
+// ultimo intento
    }
         
 
