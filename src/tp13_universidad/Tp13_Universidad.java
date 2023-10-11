@@ -201,7 +201,7 @@ public class Tp13_Universidad {
             }catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Error en la conexion" + ex.getMessage());
         }
-    }
+    } // ultimo intento
    }
         
 
